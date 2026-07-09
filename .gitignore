@@ -1,0 +1,60 @@
+# Local and derived data
+data/
+raw_data/
+detect_results/
+analysis_outputs/
+combined_outputs/
+analytic_cubes/
+outputs/
+tools/
+04_optional_preview_plots/
+preview_outputs/
+candidate_outputs/
+tmp/
+temp/
+
+# Generated figures and design files
+figures/
+figure_outputs/
+figure_scripts/outputs/
+figure_scripts/scripts/outputs/
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.pdf
+*.svg
+*.ai
+
+# Neuroimaging and large numeric data
+*.nii
+*.dtseries.nii
+*.pconn.nii
+*.dconn.nii
+*.npy
+*.npz
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv

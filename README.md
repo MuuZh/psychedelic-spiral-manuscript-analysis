@@ -1,0 +1,51 @@
+# Psychedelic Spiral Manuscript Analysis
+
+This repository is the minimal, manuscript-driven code release for the psychedelic fMRI spiral analyses. It collects analysis, export, and figure-generation scripts connected to the manuscript result families, including drug-placebo comparisons, optical-flow validation of the vorticity analysis, sensitivity analyses, network-level analyses, gradient-alignment analyses, phase-field reconstruction, statistical testing, and figure generation.
+
+This is a clean archival code release. It is not a one-command reproducibility package.
+
+## Scope
+
+The repository contains scripts and lightweight provenance/manifests only. It does not distribute raw fMRI data, large detection outputs, large intermediate outputs, generated preview plots, final figure PDFs/PNGs, Adobe Illustrator files, local caches, internal design notes, or release-maintenance tools. Many scripts depend on derived fMRI products and export tables that are not included here.
+
+Local machine paths have been removed or sanitized where found. Paths such as `<analysis_outputs>`, `<detect_results>`, `<derived_data>`, `<source_analysis>`, and `02_exports` indicate inputs or outputs that must be supplied outside this repository.
+
+The general-purpose spiral detection code is maintained separately:
+
+https://github.com/MuuZh/Brain-Vortex-Detection-PY
+
+The cortical-gradient computation code is maintained separately:
+
+https://github.com/MuuZh/cortex-gradient-computation
+
+## Directory Overview
+
+- `manuscript_analysis/`: manuscript-specific analysis scripts copied from the analysis workspace.
+- `export_scripts/`: scripts used to assemble retained source-data exports and validation summaries.
+- `figure_scripts/`: final figure plotting scripts for manuscript, Extended Data, and Supplementary figures.
+- `provenance/`: human-readable mapping from manuscript result families to scripts and export families.
+- `data_manifests/`: sanitized export and source-data manifests, without copying the large exported data products.
+
+## Minimal Usage Notes
+
+Install the best-effort Python dependencies:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+Then inspect or adapt individual scripts for the available local data products. Most scripts expect derived outputs from prior analysis stages and are not expected to run unchanged without those inputs.
+
+Useful lightweight release checks:
+
+```powershell
+python -m compileall manuscript_analysis export_scripts figure_scripts
+```
+
+Before sharing, also scan the repository for local absolute paths and excluded generated files.
+
+## Reproducibility Limitations
+
+This release is intended to document and archive the manuscript-specific analysis code. It does not provide a full execution log, raw data, complete intermediate products, or a single command that rebuilds the paper. Some copied scripts were sanitized for public release but have not been revalidated end-to-end after cleanup.
+
+See `provenance/manuscript_code_map.md` for the manuscript result-family mapping.

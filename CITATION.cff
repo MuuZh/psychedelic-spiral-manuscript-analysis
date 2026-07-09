@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript and this repository."
+title: "Psychedelic Spiral Manuscript Analysis"
+type: software
+authors:
+  - name: "Psychedelic Spiral Manuscript Analysis contributors"
+repository-code: "https://github.com/MuuZh/psychedelic-spiral-manuscript-analysis"
+license: MIT
+date-released: 2026-07-09
