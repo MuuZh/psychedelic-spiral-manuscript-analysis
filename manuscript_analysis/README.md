@@ -4,6 +4,8 @@ This directory contains manuscript-specific analysis scripts copied from the ana
 
 `upstream_generation/` contains manuscript-specific intermediate-generation scripts retained to document how downstream inputs were produced, including phase-field reconstruction, empirical and reconstructed phase-FC, per-pattern MSD beta, GCOR batch outputs, sigma/curl sensitivity inputs, and curl-vs-optical-flow comparison inputs.
 
+`spiral_phase_model/` contains the spiral phase-field model implementation and reconstruction scripts used for the manuscript's model section. It includes the release-local `pybrainmodel/` source files, batch fitting scripts, and `phase_recon_v1.py` for reconstructing phase cubes from saved model results.
+
 `raw_fc/` contains the conventional raw-FC pipeline and analysis scripts found in the local FC workspace, including the hemisphere-first comparison script referenced by the retained raw-FC export workflow.
 
 These files are archived for transparency. They generally expect derived fMRI inputs and prior analysis outputs that are not distributed in this repository. Local paths have been sanitized where found, but the scripts have not been revalidated end-to-end after public-release cleanup.

@@ -5,6 +5,9 @@ detect_results/
 analysis_outputs/
 combined_outputs/
 analytic_cubes/
+brainmodel/results/
+model_results/
+phase_recon/
 outputs/
 tools/
 04_optional_preview_plots/
@@ -34,6 +37,10 @@ figure_scripts/scripts/outputs/
 *.dconn.nii
 *.npy
 *.npz
+*.pkl
+*.pickle
+*.pt
+*.pth
 
 # Python
 __pycache__/
